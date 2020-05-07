@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Finaas.Web.Models.Academico
 {
-    public class Escuela
+    public class Profesor
     {
         public string Id { get; set; }
         public string Nombre { get; set; }
-        public Conocimiento Conocimiento { get; set; }
-        public DateTime FechaApertura { get; set; }
-        public Empleado Decano { get; set; }
+        public Empleado Empleado { get; set; }
+        public string EmpleadoId { get; set; }
     }
 }
