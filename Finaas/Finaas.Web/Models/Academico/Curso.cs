@@ -13,11 +13,6 @@ namespace Finaas.Web.Models.Academico
         public int Cupo { get; set; }
         public int Disponible { get; set; }
         public Programa Programa { get; set; }
-        public bool Estado => {?Disponible > 0 true : falsepublic override bool Equals(object obj)
-        {
-            return obj is Curso curso &&
-                   Estado == curso.Estado;
-        }
-    }
+        public bool Estado { get; set; }
     }
 }
