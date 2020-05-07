@@ -13,6 +13,5 @@ namespace Finaas.Web.Models.Academico
         public string Periodo { get; set; }
         public DateTime FechaAdmision { get; set; }
         public Programa Programa { get; set; }
-        public TiposAdmision TipoAdmision { get; set; }
     }
 }
