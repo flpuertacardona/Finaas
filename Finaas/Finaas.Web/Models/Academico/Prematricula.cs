@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Finaas.Web.Models.Academico
 {
-    public class Matricula
+    public class Prematricula
     {
         public string Id { get; set; }
         public Alumno Alumno { get; set; }
@@ -14,9 +14,9 @@ namespace Finaas.Web.Models.Academico
         public DateTime FechaAdmision { get; set; }
         public Programa Programa { get; set; }
         public Asignatura Asignatura { get; set; }
-        public int CantidadCreditos { get; set; }
+        public int NumeroCreditos { get; set; }
         public float Descuento { get; set; }
         public decimal ValorCredito { get; set; }
-        public decimal ValorDescuento{ get; set; }
+        public decimal ValorDescuento { get; set; }
     }
 }

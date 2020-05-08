@@ -13,5 +13,9 @@ namespace Finaas.Web.Models.Academico
         public Curso Curso { get; set; }
         public string CursoId { get; set; }
         public List<Alumno> Alumnos { get; set; }
+        public DateTime FechaAsistencia { get; set; }
+        public Asignatura Asignatura { get; set; }
+        public string AsignaturaId { get; set; }
+
     }
 }

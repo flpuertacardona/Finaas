@@ -5,13 +5,14 @@ using System.Threading.Tasks;
 
 namespace Finaas.Web.Models.Academico
 {
-    public class Credito
+    public class Promedio
     {
         public string Id { get; set; }
+        public string Periodo { get; set; }
+        public Alumno Alumno { get; set; }
+        public string AlumnoId { get; set; }
         public Programa Programa { get; set; }
         public string ProgramaId { get; set; }
-        public Asignatura Asignatura { get; set; }
-        public string AsignaturaId { get; set; }
-        public int NumeroCreditos { get; set; }
+        public float Nota { get; set; }
     }
 }

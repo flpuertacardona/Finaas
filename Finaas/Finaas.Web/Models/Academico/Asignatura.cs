@@ -12,6 +12,5 @@ namespace Finaas.Web.Models.Academico
         public Escuela Escuela { get; set; }
         public string EscuelaId { get; set; }
         public List<Profesor> Profesores { get; set; }
-
     }
 }
