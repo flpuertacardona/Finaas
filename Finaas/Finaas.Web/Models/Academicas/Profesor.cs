@@ -12,5 +12,6 @@ namespace Finaas.Web.Models.Academicas
         public string Nombre { get; set; }
         public Empleado Empleado { get; set; }
         public string EmpleadoId { get; set; }
+        public CategoriasProfesor CategoriaProfesor { get; set; }
     }
 }

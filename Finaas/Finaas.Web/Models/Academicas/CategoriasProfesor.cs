@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Finaas.Web.Models.Academicas
 {
-    public enum Categorias
+    public enum CategoriasProfesor
     {
         Pregrado = 0,
         Postgrado = 1,

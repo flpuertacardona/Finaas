@@ -9,7 +9,7 @@ namespace Finaas.Web.Models.Academicas
     {
         public string Id { get; set; }
         public string Nombre { get; set; }
-        public Categorias Categoria { get; set; }
+        public CategoriasProfesor Categoria { get; set; }
         public Escuela Escuela { get; set; }
         public string EscuelaId { get; set; }
         public List<Asignatura> Asignaturas { get; set; }
