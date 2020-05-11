@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Finaas.Web.Data.Investigacion;
 using Finaas.Web.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,7 +28,7 @@ namespace Finaas.Web
             services.AddControllersWithViews();
 
             string connectionString = ConfigurationExtensions.GetConnectionString(this.Configuration, "DefaultConnection");
-            services.AddDbContext<DataContext>(options => options.UseSqlServer(connectionString));
+            services.AddDbContext<InvestigacionContext>(options => options.UseSqlServer(connectionString));
 
         }
 

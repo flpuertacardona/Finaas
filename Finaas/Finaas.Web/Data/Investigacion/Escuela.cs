@@ -4,14 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Finaas.Web.Models.Academicas
+namespace Finaas.Web.Data.Investigacion
 {
-    public class Profesor
+    public class Escuela
     {
         public string Id { get; set; }
         public string Nombre { get; set; }
-        public Empleado Empleado { get; set; }
-        public string EmpleadoId { get; set; }
-        public CategoriasProfesor CategoriaProfesor { get; set; }
+        public Conocimiento Conocimiento { get; set; }
+        public DateTime FechaApertura { get; set; }
+        public Empleado Decano { get; set; }
     }
 }

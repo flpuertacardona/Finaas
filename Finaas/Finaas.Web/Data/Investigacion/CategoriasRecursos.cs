@@ -18,6 +18,7 @@ namespace Finaas.Web.Data.Investigacion
         Yate = 8,
         Propiedad_Intelectual = 9,
         Transferencia_Dinero = 10,
-        Transferencia_Titulo_Valor = 11
+        Transferencia_Titulo_Valor = 11,
+        Eqipos_Computo = 12
     }
 }

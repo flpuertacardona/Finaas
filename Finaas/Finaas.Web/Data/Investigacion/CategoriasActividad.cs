@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Finaas.Web.Data.Investigacion
 {
-    public enum CategoriasConocimiento
+    public enum CategoriasActividad
     {
         Evaluar_Viabilidad_Proyecto = 0,
         Asignacion_Cientificos = 1,
@@ -15,6 +15,7 @@ namespace Finaas.Web.Data.Investigacion
         Reajuste_Proyecto = 5,
         Publicación_Resultados = 6,
         Socialización_Resultados = 7,
-        Capacitación_Cientificos = 8
+        Capacitación_Cientificos = 8,
+        Descubrir_Conocimiento = 9
     }
 }

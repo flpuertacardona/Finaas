@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Finaas.Web.Models.Academicas
+namespace Finaas.Web.Data.Investigacion
 {
     public enum CategoriasProfesor
     {

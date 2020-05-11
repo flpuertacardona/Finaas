@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Finaas.Web.Data.Investigacion
 {
-    public class GruposInvestigacion
+    public class Grupo
     {
         public string Id { get; set; }
         public string Nombre { get; set; }
         public Escuela Escuela { get; set; }
         public string EscuelaId { get; set; }
-        public CulturaConocimiento CulturaConocimiento { get; set; }
+        public Cultura Cultura { get; set; }
         public List<Cientifico> Cientificos { get; set; }
         public DateTime FechaApertura { get; set; }
     }

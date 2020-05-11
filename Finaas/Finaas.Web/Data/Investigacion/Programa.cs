@@ -5,12 +5,15 @@ using System.Threading.Tasks;
 
 namespace Finaas.Web.Data.Investigacion
 {
-    public class Asignatura
+    public class Programa
     {
         public string Id { get; set; }
         public string Nombre { get; set; }
+        public CategoriasProfesor Categoria { get; set; }
         public Escuela Escuela { get; set; }
         public string EscuelaId { get; set; }
-        public List<Profesor> Profesores { get; set; }
+        public List<Asignatura> Asignaturas { get; set; }
+
+
     }
 }

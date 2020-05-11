@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Finaas.Web.Data.Investigacion
+namespace Finaas.Web.Models.Academicas
 {
     public class Asignatura
     {

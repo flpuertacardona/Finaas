@@ -1,4 +1,5 @@
-﻿using Finaas.Web.Models.Academicas;
+﻿using Finaas.Web.Data.Investigacion;
+using Finaas.Web.Models.Academicas;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ namespace Finaas.Web.Models
 {
     public class DataContext : DbContext
     {
-        public DbSet<Escuela> Escuelas { get; set; }
+        public DbSet<Agenda> Agendas { get; set; }
         public DbSet<Programa> Programas { get; set; }
         public DbSet<Asignatura> Asignaturas { get; set; }
         public DbSet<Academico> Academicos { get; set; }
