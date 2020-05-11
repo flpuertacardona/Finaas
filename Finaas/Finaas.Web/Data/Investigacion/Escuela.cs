@@ -12,6 +12,9 @@ namespace Finaas.Web.Data.Investigacion
         public string Nombre { get; set; }
         public Conocimiento Conocimiento { get; set; }
         public DateTime FechaApertura { get; set; }
-        public Empleado Decano { get; set; }
+        public Profesor Decano { get; set; }
+        public string ProfesorId { get; set; }
+        public List<Programa> Programas { get; set; }
+        public List<Cultura> Culturas { get; set; }
     }
 }

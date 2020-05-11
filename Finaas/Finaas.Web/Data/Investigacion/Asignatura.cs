@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Finaas.Web.Models.Academicas
+namespace Finaas.Web.Data.Investigacion
 {
     public class Asignatura
     {
@@ -12,5 +12,6 @@ namespace Finaas.Web.Models.Academicas
         public Escuela Escuela { get; set; }
         public string EscuelaId { get; set; }
         public List<Profesor> Profesores { get; set; }
+        public List<Programa> Programas { get; set; }
     }
 }

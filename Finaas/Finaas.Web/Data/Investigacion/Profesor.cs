@@ -13,11 +13,13 @@ namespace Finaas.Web.Data.Investigacion
         public string Nombre { get; set; }
         public Empleado Empleado { get; set; }
         public string EmpleadoId { get; set; }
-        public CategoriasProfesor Categoria { get; set; }
+        public CategoriasPrograma Categoria { get; set; }
         public Escuela Escuela { get; set; }
         public string EscuelaId { get; set; }
         public List<Programa> Programas { get; set; }
         public Grupo Grupo { get; set; }
+        public string GrupoId { get; set; }
         public Cultura Cultura { get; set; }
+        public string CulturaId { get; set; }
     }
 }

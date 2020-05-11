@@ -13,6 +13,7 @@ namespace Finaas.Web.Data.Investigacion
         public FuentesRecursos FuenteRecursos { get; set; }
         public CategoriasRecursos CategoriasRecursos { get; set; }
         public Cultura Destinacion { get; set; }
+        public string CulturaId { get; set; }
         public DateTime FechaIngreso { get; set; }
         public float Valor { get; set; }
         public float Disponible { get; set; }
@@ -20,6 +21,6 @@ namespace Finaas.Web.Data.Investigacion
         public Grupo Grupo { get; set; }
         public string GrupoId { get; set; }
         public Escuela Escuela { get; set; }
-        public Programa Programa { get; set; }
+        public string EscuelaId { get; set; }
     }
 }

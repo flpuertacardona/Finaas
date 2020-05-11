@@ -13,9 +13,9 @@ namespace Finaas.Web.Data.Investigacion
         public Profesor Profesor { get; set; }
         public string ProfesorId { get; set; }
         public Cultura Cultura { get; set; }
+        public string CulturaId { get; set; }
         public Grupo Grupo { get; set; }
-        public Programa Programa { get; set; }
-        public string ProgramaId { get; set; }
+        public string GrupoId { get; set; }
         public Escuela Escuela { get; set; }
         public string EscuelaId { get; set; }
     }

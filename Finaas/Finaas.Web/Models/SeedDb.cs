@@ -56,6 +56,8 @@ namespace Finaas.Web.Models
                 _context.Financiaciones.Add(new Financiacion { Nombre = "Financiación investigación Proyecto 03" });
                 _context.Financiaciones.Add(new Financiacion { Nombre = "Financiación investigación Proyecto 04" });
                 _context.Financiaciones.Add(new Financiacion { Nombre = "Financiación investigación Proyecto 05" });
+                _context.Financiaciones.Add(new Financiacion { Nombre = "Financiación investigación Proyecto 06" });
+                _context.Financiaciones.Add(new Financiacion { Nombre = "Financiación investigación Proyecto 07" });
                 await _context.SaveChangesAsync();
             }
         }
@@ -70,6 +72,7 @@ namespace Finaas.Web.Models
                 _context.Publicaciones.Add(new Publicacion { Nombre = "Publicar resultados investigación Proyecto 04" });
                 _context.Publicaciones.Add(new Publicacion { Nombre = "Publicar resultados investigación Proyecto 05" });
                 _context.Publicaciones.Add(new Publicacion { Nombre = "Publicar resultados investigación Proyecto 06" });
+                _context.Publicaciones.Add(new Publicacion { Nombre = "Publicar resultados investigación Proyecto 07" });
                 await _context.SaveChangesAsync();
             }
         }
@@ -101,6 +104,7 @@ namespace Finaas.Web.Models
                 _context.Actividades.Add(new Actividad { Nombre = "Obtener Financiación Proyecto 04" });
                 _context.Actividades.Add(new Actividad { Nombre = "Obtener Financiación Proyecto 05" });
                 _context.Actividades.Add(new Actividad { Nombre = "Obtener Financiación Proyecto 06" });
+                _context.Actividades.Add(new Actividad { Nombre = "Obtener Financiación Proyecto 07" });
                 await _context.SaveChangesAsync();
             }
         }
@@ -114,6 +118,8 @@ namespace Finaas.Web.Models
                 _context.Agendas.Add(new Agenda { Nombre = "Realizar Investigación Proyecto 03" });
                 _context.Agendas.Add(new Agenda { Nombre = "Realizar Investigación Proyecto 04" });
                 _context.Agendas.Add(new Agenda { Nombre = "Realizar Investigación Proyecto 05" });
+                _context.Agendas.Add(new Agenda { Nombre = "Realizar Investigación Proyecto 05" });
+                _context.Agendas.Add(new Agenda { Nombre = "Realizar Investigación Proyecto 07" });
                 await _context.SaveChangesAsync();
             }
         }

@@ -12,14 +12,10 @@ namespace Finaas.Web.Data.Investigacion
         public string Nombre { get; set; }
         public Grupo Grupo { get; set; }
         public string GrupoId { get; set; }
-        public Cultura Cultura { get; set; }
-        public string CulturaId { get; set; }
         public DateTime FechaActividad { get; set; }
         public CategoriasApropiacion CategoriaAprociacion { get; set; }
         public Programa Programa { get; set; }
         public string ProgrmaId { get; set; }
-        public Escuela Escuela { get; set; }
-        public string EscuelaId { get; set; }
         public CategoriasActividad Categoria { get; set; }
         public Regulacion Regulacion { get; set; }
         public Financiacion Financiacion { get; set; }

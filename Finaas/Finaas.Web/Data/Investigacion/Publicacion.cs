@@ -11,9 +11,12 @@ namespace Finaas.Web.Data.Investigacion
         public string Nombre { get; set; }
         public DateTime FechaPublicacion { get; set; }
         public string UrlResultados { get; set; }
-        public CulturaConocimiento CulturaConocimiento { get; set; }
-        public Grupo GrupoInvestigacion { get; set; }
-        public string GruposInvestigacionId { get; set; }
+        public Cultura Cultura { get; set; }
+        public string CulturaId { get; set; }
+        public Grupo Grupo { get; set; }
+        public string GrupoId { get; set; }
+        public Escuela Escuela { get; set; }
+        public string EscuelaId { get; set; }
         public string ImageUrl { get; set; }
 
         // TODO: Change the path when publish

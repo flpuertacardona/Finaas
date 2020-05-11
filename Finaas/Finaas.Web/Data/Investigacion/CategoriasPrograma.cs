@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Finaas.Web.Data.Investigacion
 {
-    public enum CategoriasProfesor
+    public enum CategoriasPrograma
     {
         Pregrado = 0,
         Postgrado = 1,
