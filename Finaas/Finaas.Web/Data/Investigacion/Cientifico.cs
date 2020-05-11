@@ -11,6 +11,6 @@ namespace Finaas.Web.Data.Investigacion
         public string Id { get; set; }
         public Profesor Profesor { get; set; }
         public string ProfesorId { get; set; }
-        public EjesConocimiento EjeConocimiento { get; set; }
+        public CulturaConocimiento EjeConocimiento { get; set; }
     }
 }

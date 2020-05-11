@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 
 namespace Finaas.Web.Data.Investigacion
 {
-    public class RecursosInvestigacion
+    public class FinanciacionProyecto
     {
         public string Id { get; set; }
         public string Descripcion { get; set; }
         public FuentesRecursos FuenteRecursos { get; set; }
         public CategoriasRecursos CategoriasRecursos { get; set; }
-        public EjesConocimiento Destinacion { get; set; }
+        public CulturaConocimiento Destinacion { get; set; }
         public DateTime FechaIngreso { get; set; }
         public float Valor { get; set; }
         public float Disponible { get; set; }

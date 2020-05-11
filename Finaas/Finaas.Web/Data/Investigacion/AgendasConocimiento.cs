@@ -11,7 +11,7 @@ namespace Finaas.Web.Data.Investigacion
         public string Descripcion { get; set; }
         public GruposInvestigacion GrupoInvestigacion { get; set; }
         public string GruposInvestigacionId { get; set; }
-        public EjesConocimiento EjeConociminento { get; set; }
+        public CulturaConocimiento EjeConociminento { get; set; }
         public CategoriasConocimiento  ActividadConocimiento { get; set; }
         public DateTime FechaActividad { get; set; }
         public DateTime HoraActividad { get; set; }
@@ -19,5 +19,6 @@ namespace Finaas.Web.Data.Investigacion
         public string Documentacion { get; set; }
         public string Url { get; set; }
         public string Lugar { get; set; }
+        public FinanciacionProyecto Financiacion { get; set; }
     }
 }

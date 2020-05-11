@@ -12,7 +12,7 @@ namespace Finaas.Web.Data.Investigacion
         public DateTime FechaPublicacion { get; set; }
         public string Resultados { get; set; }
         public string Url { get; set; }
-        public EjesConocimiento EjeConocimiento { get; set; }
+        public CulturaConocimiento EjeConocimiento { get; set; }
         public GruposInvestigacion  GrupoInvestigacion { get; set; }
         public string GruposInvestigacionId { get; set; }
     }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Finaas.Web.Data.Investigacion
 {
-    public enum EjesConocimiento
+    public enum CulturaConocimiento
     {
         Industrias_40_Tecnologías_Convergentes_nano_bio_info_cogno = 0,
         Agrotech_transformación_mercado_producción = 1,
