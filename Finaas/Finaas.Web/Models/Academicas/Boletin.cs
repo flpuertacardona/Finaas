@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Finaas.Web.Data.Investigacion;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

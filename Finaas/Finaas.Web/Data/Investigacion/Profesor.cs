@@ -1,5 +1,4 @@
 ﻿using Finaas.Web.Data.Investigacion;
-using Finaas.Web.Models.Administrativo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,17 +8,14 @@ namespace Finaas.Web.Data.Investigacion
 {
     public class Profesor
     {
-        public string Id { get; set; }
-        public string Nombre { get; set; }
+        public int Id { get; set; }
+        public int EmpleadoId { get; set; }
         public Empleado Empleado { get; set; }
-        public string EmpleadoId { get; set; }
         public CategoriasPrograma Categoria { get; set; }
-        public Escuela Escuela { get; set; }
-        public string EscuelaId { get; set; }
         public List<Programa> Programas { get; set; }
+        public int? GrupoId { get; set; }
         public Grupo Grupo { get; set; }
-        public string GrupoId { get; set; }
-        public Cultura Cultura { get; set; }
-        public string CulturaId { get; set; }
+        public Disciplina Conocimiento { get; set; }
+        public CategoriaInvestigador CategoriaInvestigador { get; set; }
     }
 }

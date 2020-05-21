@@ -8,11 +8,20 @@ namespace Finaas.Web.Data.Investigacion
 {
     public class Grupo
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Nombre { get; set; }
+        public string Codigo_Colciencias { get; set; }
+        public Profesor Coordinador { get; set; }
+        public int EscuelaId { get; set; }
         public Escuela Escuela { get; set; }
-        public string EscuelaId { get; set; }
-        public List<Cientifico> Cientificos { get; set; }
+        public List<Profesor> Investigadores { get; set; }
         public DateTime FechaApertura { get; set; }
+        public int CulturaId { get; set; }
+        public Cultura Cultura { get; set; }
+        public List<MasterProject> Ejecuciones { get; set; }
+        public CategoriaGrupo Categria { get; set; }
+        public int Patentes { get; set; }
+        public List<Convenio> Convenios { get; set; }
+        public List<Laboratorio> Laboratorios { get; set; }
     }
 }

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Finaas.Web.Data.Investigacion.Encuesta>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaPublicacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UrlResultados)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CulturaConocimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GruposInvestigacionId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageUrl)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaPublicacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UrlResultados)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CulturaConocimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GruposInvestigacionId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageUrl)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

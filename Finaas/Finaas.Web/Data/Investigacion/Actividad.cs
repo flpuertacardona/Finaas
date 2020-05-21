@@ -8,18 +8,16 @@ namespace Finaas.Web.Data.Investigacion
 {
     public class Actividad
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Nombre { get; set; }
-        public Grupo Grupo { get; set; }
-        public string GrupoId { get; set; }
+        public int AgendaId { get; set; }
+        public Agenda Agenda { get; set; }
         public DateTime FechaActividad { get; set; }
         public CategoriasApropiacion CategoriaAprociacion { get; set; }
+        public int ProgrmaId { get; set; }
         public Programa Programa { get; set; }
-        public string ProgrmaId { get; set; }
         public CategoriasActividad Categoria { get; set; }
         public Regulacion Regulacion { get; set; }
-        public Financiacion Financiacion { get; set; }
-        public string FinanciacionId { get; set; }
         public UnidadApoyo  UnidadApoyo { get; set; }
         public string ImageUrl { get; set; }
 
@@ -28,5 +26,8 @@ namespace Finaas.Web.Data.Investigacion
             ? null
             : $"https://Finaas.azurewebsites.net{ImageUrl.Substring(1)}";
         public string Lugar { get; set; }
+        public int? PublicacionId { get; set; }
+        public Publicacion Publicacion { get; set; }
+        public CategoriaProyecto CategoriaProyecto { get; set; }
     }
 }

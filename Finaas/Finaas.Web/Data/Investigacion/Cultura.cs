@@ -8,8 +8,8 @@ namespace Finaas.Web.Data.Investigacion
 {
     public class Cultura
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Nombre { get; set; }
-        public CulturaConocimiento CulturaConocimiento { get; set; }
+        public AgendaConocimiento CulturaConocimiento { get; set; }
     }
 }

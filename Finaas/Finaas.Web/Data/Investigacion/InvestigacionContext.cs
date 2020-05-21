@@ -11,10 +11,9 @@ namespace Finaas.Web.Data.Investigacion
     {
         public DbSet<Escuela> Escuelas { get; set; }
         public DbSet<Actividad> Actividades { get; set; }
-        public DbSet<Cientifico> Cientificos { get; set; }
         public DbSet<Grupo> Grupos { get; set; }
         public DbSet<Cultura> Culturas { get; set; }
-        public DbSet<Ejecucion> Ejecucion { get; set; }
+        public DbSet<MasterProject> MasterProjects { get; set; }
         public DbSet<Encuesta> Encuestas { get; set; }
         public DbSet<Financiacion> Financiaciones { get; set; }
         public DbSet<Publicacion> Publicaciones { get; set; }
@@ -22,7 +21,10 @@ namespace Finaas.Web.Data.Investigacion
         public DbSet<Profesor> Profesores { get; set; }
         public DbSet<Agenda> Agendas { get; set; }
         public DbSet<Asignatura> Asignaturas { get; set; }
-        public DbSet<Ejecucion> Ejecuciones { get; set; }
+        public DbSet<Estudiante> Estudiantes { get; set; }
+        public DbSet<Empleado> Empleados { get; set; }
+        public DbSet<Laboratorio> Laboratorios { get; set; }
+        public DbSet<EjeTematico> EjesTematicos { get; set; }
 
         public InvestigacionContext(DbContextOptions<InvestigacionContext> options) : base(options)
         {

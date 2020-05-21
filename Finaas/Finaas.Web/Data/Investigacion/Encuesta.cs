@@ -7,13 +7,13 @@ namespace Finaas.Web.Data.Investigacion
 {
     public class Encuesta
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Nombre { get; set; }
         public DateTime FechaPublicacion { get; set; }
         public string UrlResultados { get; set; }
-        public CulturaConocimiento CulturaConocimiento { get; set; }
+        public AgendaConocimiento CulturaConocimiento { get; set; }
+        public int GruposInvestigacionId { get; set; }
         public Grupo  GrupoInvestigacion { get; set; }
-        public string GruposInvestigacionId { get; set; }
         public string ImageUrl { get; set; }
 
         // TODO: Change the path when publish

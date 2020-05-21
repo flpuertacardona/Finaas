@@ -1,0 +1,62 @@
+﻿@model Finaas.Web.Data.Investigacion.Publicacion
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Publicacion</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaPublicacion" class="control-label"></label>
+                <input asp-for="FechaPublicacion" class="form-control" />
+                <span asp-validation-for="FechaPublicacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UrlResultados" class="control-label"></label>
+                <input asp-for="UrlResultados" class="form-control" />
+                <span asp-validation-for="UrlResultados" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GrupoId" class="control-label"></label>
+                <select asp-for="GrupoId" class ="form-control" asp-items="ViewBag.GrupoId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Revista" class="control-label"></label>
+                <input asp-for="Revista" class="form-control" />
+                <span asp-validation-for="Revista" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageUrl" class="control-label"></label>
+                <input asp-for="ImageUrl" class="form-control" />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Categoria" class="control-label"></label>
+                <select asp-for="Categoria" class="form-control"></select>
+                <span asp-validation-for="Categoria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
